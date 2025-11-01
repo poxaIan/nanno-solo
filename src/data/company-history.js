@@ -1,41 +1,41 @@
 export const companyHistory = {
-  introduction: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Desde nosso início, temos nos dedicado a fornecer serviços de excelência em engenharia e controle tecnológico.",
+  introduction: "Apresentar a NANNO SOLOS CONSULTORIA LTDA, uma empresa que carrega em sua essência a experiência, a inovação e o compromisso técnico com a engenharia e o desenvolvimento sustentável.",
   
   milestones: [
     {
-      year: "2020",
-      title: "O Início",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      year: "2010",
+      title: "Fundação",
+      description: "Fundada inicialmente sob o nome Projetos e Serviços Tecnológicos Ltda, a empresa foi conduzida por Romualdo Vicente em seus primeiros anos, atuando em serviços tecnológicos e consultorias especializadas."
+    },
+    {
+      year: "2015",
+      title: "Reestruturação",
+      description: "Em 22 de dezembro de 2015, o engenheiro Cleber Gusmão Brito Gama assumiu a direção e reestruturou a organização, ampliando suas áreas de atuação e elevando o padrão técnico dos serviços."
     },
     {
       year: "2021",
-      title: "Expansão",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title: "Consolidação da Marca",
+      description: "Em 29 de setembro de 2021, nasceu oficialmente a NANNO SOLOS CONSULTORIA LTDA, representando uma nova fase de crescimento, qualidade e posicionamento estratégico no setor de engenharia."
     },
     {
-      year: "2022",
-      title: "Conquistas",
-      description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
-    {
-      year: "2024",
-      title: "Crescimento",
-      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      year: "Hoje",
+      title: "Reconhecimento Nacional",
+      description: "A empresa é reconhecida pela excelência em geotecnia, pavimentação, controle tecnológico, sondagens, ensaios laboratoriais e consultoria técnica, atuando com seriedade e responsabilidade em diversos estados do Brasil."
     }
   ],
   
   values: {
     mission: {
       title: "Missão",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+      description: "Oferecer soluções técnicas de engenharia com excelência, segurança e responsabilidade, contribuindo para o desenvolvimento sustentável e a melhoria contínua da infraestrutura brasileira."
     },
     vision: {
       title: "Visão",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      description: "Ser reconhecida nacionalmente como referência em engenharia de solos, pavimentação e controle tecnológico, destacando-se pela inovação, confiabilidade e compromisso socioambiental."
     },
     values: {
       title: "Valores",
-      description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+      description: "Ética, transparência, excelência técnica, sustentabilidade, inovação e compromisso com nossos clientes e parceiros."
     }
   }
 };

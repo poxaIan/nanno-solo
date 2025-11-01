@@ -36,7 +36,7 @@ const Subscribe = () => {
       await emailjs.send(serviceID, templateID, templateParams, publicKey)
       
       setStatus('success')
-      setMessage('E-mail enviado com sucesso! Entraremos em contato em breve.')
+      setMessage('E-mail enviado com sucesso! Embreve entraremos em contato.')
       setEmail('')
       setTimeout(() => setStatus(''), 5000)
     } catch (error) {
@@ -47,7 +47,7 @@ const Subscribe = () => {
     }
   }
 
-  const whatsappUrl = "https://wa.me/5531991453062?text=" + encodeURIComponent("Olá! Gostaria de saber mais informações sobre os serviços.")
+  const whatsappUrl = "https://wa.me/5531991453062?text=" + encodeURIComponent("Olá! Gostaria de saber mais informações sobre a Nanno Solos!")
 
   return (
     <section className='pb-16 sm:pb-24 pt-16 sm:pt-24 bg-white text-black'>

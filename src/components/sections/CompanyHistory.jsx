@@ -3,6 +3,33 @@ import { FaLightbulb, FaRocket, FaTrophy, FaUsers } from "react-icons/fa";
 import { companyHistory } from "@/data/company-history";
 
 const CompanyHistory = () => {
+  const timelineStyles = [
+    {
+      bgGradient: "from-orange-500/15 to-yellow-500/15",
+      iconBg: "bg-gradient-to-br from-orange-500 to-yellow-500",
+      border: "border-orange-300",
+      yearColor: "text-orange-600"
+    },
+    {
+      bgGradient: "from-green-500/15 to-emerald-500/15",
+      iconBg: "bg-gradient-to-br from-green-500 to-emerald-500",
+      border: "border-green-300",
+      yearColor: "text-green-600"
+    },
+    {
+      bgGradient: "from-blue-500/15 to-cyan-500/15",
+      iconBg: "bg-gradient-to-br from-blue-500 to-cyan-500",
+      border: "border-blue-300",
+      yearColor: "text-blue-600"
+    },
+    {
+      bgGradient: "from-yellow-400/20 to-orange-400/20",
+      iconBg: "bg-gradient-to-br from-yellow-400 to-orange-400",
+      border: "border-yellow-400",
+      yearColor: "text-yellow-700"
+    }
+  ];
+
   const icons = [
     <FaLightbulb className="text-3xl" key="lightbulb" />,
     <FaRocket className="text-3xl" key="rocket" />,
@@ -12,7 +39,8 @@ const CompanyHistory = () => {
 
   const milestones = companyHistory.milestones.map((milestone, index) => ({
     ...milestone,
-    icon: icons[index % icons.length]
+    icon: icons[index % icons.length],
+    style: timelineStyles[index % timelineStyles.length]
   }));
 
   return (
@@ -34,14 +62,14 @@ const CompanyHistory = () => {
             {milestones.map((milestone, index) => (
               <div 
                 key={index}
-                className="milestone-card bg-gradient-to-br from-brandYellow/10 to-brandGreen/10 p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-brandYellow/20"
+                className={`milestone-card bg-gradient-to-br ${milestone.style.bgGradient} p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer border-2 ${milestone.style.border}`}
               >
                 {/* Ano e Ícone */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="icon-container bg-brandYellow text-white rounded-full p-4 flex items-center justify-center">
+                  <div className={`icon-container ${milestone.style.iconBg} text-white rounded-full p-4 flex items-center justify-center shadow-lg`}>
                     {milestone.icon}
                   </div>
-                  <span className="text-4xl sm:text-5xl font-bold text-brandGreen font-poppins">
+                  <span className={`text-4xl sm:text-5xl font-bold ${milestone.style.yearColor} font-poppins`}>
                     {milestone.year}
                   </span>
                 </div>

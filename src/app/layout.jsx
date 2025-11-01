@@ -27,8 +27,8 @@ const avenir = localFont({
 
 
 export const metadata = {
-  title: 'Nanno Solo - Gerenciamento de Projetos e Consultoria em Engenharia',
-  description: 'Oferecemos projetos, consultorias e gerenciamento com foco em controle tecnológico e qualidade técnica para construções públicas e privadas.',
+  title: 'Nanno Solos - Consultoria em Engenharia e Controle Tecnológico',
+  description: 'Grandes problemas, Nanno soluções. Especialistas em geotecnia, pavimentação, controle tecnológico, sondagens, ensaios laboratoriais e consultoria técnica.',
 }
 
 export default function RootLayout({ children }) {

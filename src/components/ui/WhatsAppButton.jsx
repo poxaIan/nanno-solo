@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
   const phoneNumber = "5531991453062"; // Formato internacional sem + e sem espaços
-  const message = "Olá! Gostaria de saber mais informações sobre os serviços."; // Mensagem pré-definida (opcional)
+  const message = "Olá! Gostaria de saber mais informações sobre a Nanno Solos!"; // Mensagem pré-definida (opcional)
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
